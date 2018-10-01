@@ -27,12 +27,12 @@ public class RocketShipTest
     @Test
     public void part1IllegalSizes()
     {
-        System.out.print("Part 1 - Test illegal fish size: ");
+        System.out.print("Part 1 - Test illegal size: ");
 
         solutionStream.setEnabled(true);
-        RocketShip.drawRocket(0);
-        RocketShip.drawRocket(-1);
-        RocketShip.drawRocket(-6);
+        RocketShipSample.drawRocket(0);
+        RocketShipSample.drawRocket(-1);
+        RocketShipSample.drawRocket(-6);
         solutionStream.setEnabled(false);
 
         studentStream.setEnabled(true);
@@ -57,10 +57,10 @@ public class RocketShipTest
     @Test
     public void part1Size1()
     {
-        System.out.print("Part 1 - Test fish size 1: ");
+        System.out.print("Part 1 - Test size 1: ");
 
         solutionStream.setEnabled(true);
-        RocketShip.drawRocket(1);
+        RocketShipSample.drawRocket(1);
         solutionStream.setEnabled(false);
 
         studentStream.setEnabled(true);
@@ -83,12 +83,12 @@ public class RocketShipTest
     @Test
     public void part1OddSizes()
     {
-        System.out.print("Part 1 - Test odd fish sizes: ");
+        System.out.print("Part 1 - Test odd sizes: ");
 
         solutionStream.setEnabled(true);
-        RocketShip.drawRocket(3);
-        RocketShip.drawRocket(5);
-        RocketShip.drawRocket(7);
+        RocketShipSample.drawRocket(3);
+        RocketShipSample.drawRocket(5);
+        RocketShipSample.drawRocket(7);
         solutionStream.setEnabled(false);
 
         studentStream.setEnabled(true);
@@ -113,12 +113,12 @@ public class RocketShipTest
     @Test
     public void part1EvenSizes()
     {
-        System.out.print("Part 1 - Test even fish sizes: ");
+        System.out.print("Part 1 - Test even sizes: ");
 
         solutionStream.setEnabled(true);
-        RocketShip.drawRocket(2);
-        RocketShip.drawRocket(4);
-        RocketShip.drawRocket(6);
+        RocketShipSample.drawRocket(2);
+        RocketShipSample.drawRocket(4);
+        RocketShipSample.drawRocket(6);
         solutionStream.setEnabled(false);
 
         studentStream.setEnabled(true);
@@ -146,8 +146,8 @@ public class RocketShipTest
         System.out.print("Part 2 - Test odd size/odd offset: ");
 
         solutionStream.setEnabled(true);
-        RocketShip.drawRocket(3, 7);
-        RocketShip.drawRocket(5, 3);
+        RocketShipSample.drawRocket(3, 7);
+        RocketShipSample.drawRocket(5, 3);
         solutionStream.setEnabled(false);
 
         studentStream.setEnabled(true);
@@ -174,8 +174,8 @@ public class RocketShipTest
         System.out.print("Part 2 - Test odd size/even offset: ");
 
         solutionStream.setEnabled(true);
-        RocketShip.drawRocket(3, 6);
-        RocketShip.drawRocket(5, 2);
+        RocketShipSample.drawRocket(3, 6);
+        RocketShipSample.drawRocket(5, 2);
         solutionStream.setEnabled(false);
 
         studentStream.setEnabled(true);
@@ -202,8 +202,8 @@ public class RocketShipTest
         System.out.print("Part 2 - Test even size/odd offset: ");
 
         solutionStream.setEnabled(true);
-        RocketShip.drawRocket(2, 9);
-        RocketShip.drawRocket(4, 5);
+        RocketShipSample.drawRocket(2, 9);
+        RocketShipSample.drawRocket(4, 5);
         solutionStream.setEnabled(false);
 
         studentStream.setEnabled(true);
@@ -230,8 +230,8 @@ public class RocketShipTest
         System.out.print("Part 2 - Test even size/even offset: ");
 
         solutionStream.setEnabled(true);
-        RocketShip.drawRocket(2, 8);
-        RocketShip.drawRocket(4, 4);
+        RocketShipSample.drawRocket(2, 8);
+        RocketShipSample.drawRocket(4, 4);
         solutionStream.setEnabled(false);
 
         studentStream.setEnabled(true);
@@ -258,7 +258,7 @@ public class RocketShipTest
         System.out.print("Part 2 - Test rocketLaunch sequential: ");
 
         solutionStream.setEnabled(true);
-        RocketShip.rocketLaunch(1, 3, 1);
+        RocketShipSample.rocketLaunch(1, 3, 1);
         solutionStream.setEnabled(false);
 
         studentStream.setEnabled(true);
@@ -284,7 +284,7 @@ public class RocketShipTest
         System.out.print("Part 2 - Test rocketLaunch odd sizes: ");
 
         solutionStream.setEnabled(true);
-        RocketShip.rocketLaunch(1, 9, 2);
+        RocketShipSample.rocketLaunch(1, 9, 2);
         solutionStream.setEnabled(false);
 
         studentStream.setEnabled(true);
@@ -310,7 +310,7 @@ public class RocketShipTest
         System.out.print("Part 2 - Test rocketLaunch even sizes: ");
 
         solutionStream.setEnabled(true);
-        RocketShip.rocketLaunch(2, 10, 2);
+        RocketShipSample.rocketLaunch(2, 10, 2);
         solutionStream.setEnabled(false);
 
         studentStream.setEnabled(true);
@@ -339,7 +339,7 @@ public class RocketShipTest
         System.out.printf("Part 2 - Test rocketLaunch(1, %d, %d): ", max, step);
 
         solutionStream.setEnabled(true);
-        RocketShip.rocketLaunch(1, max, step);
+        RocketShipSample.rocketLaunch(1, max, step);
         solutionStream.setEnabled(false);
 
         studentStream.setEnabled(true);
