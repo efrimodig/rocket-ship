@@ -9,7 +9,7 @@ method must be able to handle illegal sizes (e.g. 0, negative sizes).  If it rec
 nothing.
 
 **Size 1 rocket**
-
+```
  /**\
 +=*=*+
 |/\/\|
@@ -19,9 +19,9 @@ nothing.
 |/\/\|
 +=*=*+
  /**\
-
+```
 **Size 2 rocket**
-
+```
    /**\
   //**\\
 +=*=*=*=*+
@@ -37,9 +37,9 @@ nothing.
 +=*=*=*=*+
    /**\
   //**\\
-
+```
 **Size 5 rocket**
-
+```
      /**\
     //**\\
    ///**\\\
@@ -65,7 +65,7 @@ nothing.
    ///**\\\
   ////**\\\\
  /////**\\\\\
-
+```
 **Part 1 Grading Scheme/Rubric**
 
 **Functional Correctness - 10 points**
@@ -104,61 +104,79 @@ minSize, maxSize and sizeStep that are defined as class constants. It will call 
 several rockets from maxSize to minSize decreasing the rocket size by sizeStep on each rocket. The resulting output will 
 look like the big rocket is chasing and eating the smaller rocket.
 
-The following example demonstrates a call to `rocketLaunch(1, 5, 2)` with 1 as minSize, 5 as maxSize and 2 as sizeStep. 
-This will print the rockets sized 5, 3, and 1.
+The following example demonstrates a call to `rocketLaunch(2, 5, 1)` with 2 as minSize, 5 as maxSize and 1 as sizeStep. 
+This will print the rockets sized 2, 3, 4, and 5.
 
-Example output of `rocketLaunch(1, 5, 2)`
+Example output of `rocketLaunch(2, 5, 1)`
+```
+     /**\
+    +=*=*+
+    |/\/\|
+    |\/\/|
+    +=*=*+
+    |\/\/|
+    |/\/\|
+    +=*=*+
+     /**\
 
-           vvvvvvvvvvv
-            vvvvvvvvv
-             vvvvvvv
-              vvvvv
-               vvv
-                v
-               vov
-              vooov
-             vooooov
-            vooooooov
-           vooooooooov
-          vooooooooooov
-         vooooooooooooov
-        vooooooooooooooov
-       vooooooooooooooooov
-      vooooooooooooooooooov
-     vooooooooooooooooooooov
-    vooooooooooooooooooooooov
-     voooooooooo oooooooooov
-      voooooooo   oooooooov
-       voooooo     oooooov
-        voooo       oooov
-         voo         oov
-          v           v
+     /**\
+    //**\\
+  +=*=*=*=*+
+  |./\../\.|
+  |/\/\/\/\|
+  |\/\/\/\/|
+  |.\/..\/.|
+  +=*=*=*=*+
+  |\/\/\/\/|
+  |.\/..\/.|
+  |./\../\.|
+  |/\/\/\/\|
+  +=*=*=*=*+
+     /**\
+    //**\\
 
-             vvvvvvv
-              vvvvv
-               vvv
-                v
-               vov
-              vooov
-             vooooov
-            vooooooov
-           vooooooooov
-          vooooooooooov
-         vooooooooooooov
-        vooooooooooooooov
-         voooooo oooooov
-          voooo   oooov
-           voo     oov
-            v       v
+     /**\
+    //**\\
+   ///**\\\
+  +=*=*=*=*+
+  |./\../\.|
+  |/\/\/\/\|
+  |\/\/\/\/|
+  |.\/..\/.|
+  +=*=*=*=*+
+  |\/\/\/\/|
+  |.\/..\/.|
+  |./\../\.|
+  |/\/\/\/\|
+  +=*=*=*=*+
+     /**\
+    //**\\
+   ///**\\\
 
-               vvv
-                v
-               vov
-              vooov
-             vooooov
-            vooooooov
-             voo oov
-              v   v
+     /**\
+    //**\\
+   ///**\\\
+  ////**\\\\
++=*=*=*=*=*=*+
+|../\..../\..|
+|./\/\../\/\.|
+|/\/\/\/\/\/\|
+|\/\/\/\/\/\/|
+|.\/\/..\/\/.|
+|..\/....\/..|
++=*=*=*=*=*=*+
+|\/\/\/\/\/\/|
+|.\/\/..\/\/.|
+|..\/....\/..|
+|../\..../\..|
+|./\/\../\/\.|
+|/\/\/\/\/\/\|
++=*=*=*=*=*=*+
+     /**\
+    //**\\
+   ///**\\\
+  ////**\\\\
+```
 
 The `rocketLaunch()` method may assume the parameters are valid. In other words, it doesn’t need to check for parameter 
 error. It is important to note that all the rockets printed *must be center justified*. In order to do this, the 
